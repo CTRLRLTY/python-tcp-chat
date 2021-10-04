@@ -1,0 +1,12 @@
+##############################################################
+#                                                            #
+#               Muhammad Raznan - 2301914743                 #
+#                                                            #
+##############################################################
+
+python version: 3.9.5
+platform: GNU/Linux:amd64
+
+This project contains a simple chat client-server implementation. The client file is called client.py, and the server code is in server.py.  Both of these files must run as a separate process. The server.py must be launched first so the client.py can connect to it. Once everything is set up correctly, we can type on the standard input from either the client or the server to send a message from one another. 
+
+Reference: https://docs.python.org/3/library/asyncio-protocol.html
