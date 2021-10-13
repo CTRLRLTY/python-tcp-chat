@@ -47,7 +47,7 @@ async def main():
     # Connects to server using ChatClient protocol
     connection = await loop.create_connection(
             lambda: ChatClient(on_connection_lost),
-            '127.0.0.1', 6969)
+            '127.0.0.1', 8083)
 
     transport = connection[0]
 

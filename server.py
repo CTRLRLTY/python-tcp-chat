@@ -29,7 +29,7 @@ class ChatServer(asyncio.BufferedProtocol):
 
     def buffer_updated(self, nbytes):
         # Decode the received raw bytes and print to console
-        print(f"C:{bytes(self.data_view[:]).decode()}")
+        print(f"P:{bytes(self.data_view[:]).decode()}")
 
 
 async def main():
