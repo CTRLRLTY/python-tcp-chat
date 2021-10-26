@@ -7,6 +7,6 @@
 python version: 3.9.5
 platform: GNU/Linux:amd64
 
-This project contains a simple chat client-server implementation. The client file is called client.py, and the server code is in server.py.  Both of these files must run as a separate process. The server.py must be launched first so the client.py can connect to it. Once everything is set up correctly, we can type on the standard input from either the client or the server to send a message from one another. 
+This project is recycled from the previous assignment. The script file has to be started in the exact order like before: server.py -> reverse_proxy.py -> client.py. Both the client and server script are the same as before; the only new added feature is the reverse_proxy.py which will intercept any bi-directional communication between the server and the client. The proxy will reject any data that is not considered a "digit".
 
 Reference: https://docs.python.org/3/library/asyncio-protocol.html
